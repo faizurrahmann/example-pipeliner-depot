@@ -20,6 +20,9 @@ def call(Map stageOverrides = [:]) {
     String message = env.gitlabMergeRequestDescription
     Map environment = env.getEnvironment()
 
+    print "message:" + message
+    print "environment:" + environment
+
     // Override variables from Jenkinsfile with parameter values defined
     // in the job.
     if (params) {
