@@ -39,5 +39,6 @@ def call(Map stageOverrides = [:]) {
                                                                 ioMap);
     // Returns a populated ioMap for communication with the next pipeline
     // not used for anything here.
+    print "componentPipeline:" + componentPipeline
     ioMap = componentPipeline.run()
 }
