@@ -33,7 +33,7 @@ class ComponentStages {
      */
     def stageBuild(String sourceDir, String buildDir, String cmakeArgs) {
         script.stage("Build") {
-            script.sh "cmake" + " -H" + sourceDir + " -B" + buildDir +
+            script.sh "cmake" + " -S" + sourceDir + " -B" + buildDir +
                 " -DCMAKE_BUILD_TYPE=Debug " + (cmakeArgs ? cmakeArgs : "")
             script.sh "cmake --build ${buildDir} -- -j\$(nproc)"
         }
