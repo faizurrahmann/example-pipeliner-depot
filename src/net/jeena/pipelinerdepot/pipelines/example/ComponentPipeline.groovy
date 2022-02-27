@@ -41,7 +41,7 @@ class ComponentPipeline extends BasePipeline {
             // Default values for inputs for the pipeline, can be overwritten
             // be user inputs from eithen MR message or Jenkins env
             defaultInputs: '''
-                runUnitTests = false
+                runUnitTests = true
                 cmakeArgs =
             ''',
             // Keys exposed to the user for modification
