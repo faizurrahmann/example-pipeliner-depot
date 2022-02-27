@@ -67,7 +67,7 @@ class ComponentPipeline extends BasePipeline {
 
         Logger.info("JEENA: " + stageInput.inspect())
 
-        if (stageInput['runUnitTests'] && stageInput['runUnitTests'].equalsIgnoreCase('true')) {
+        if (stageInput['rununittests'] && stageInput['rununittests'].equalsIgnoreCase('true')) {
             componentStages.stageUnitTests(buildDir);
         }
     }
