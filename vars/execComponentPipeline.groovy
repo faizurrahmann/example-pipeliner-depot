@@ -41,5 +41,5 @@ def call(Map stageOverrides = [:]) {
     // not used for anything here.
     print "componentPipeline:" + componentPipeline
     ioMap = componentPipeline.run()
-    print "ioMap:" + ioMap
+    print "ioMap::" + ioMap
 }
