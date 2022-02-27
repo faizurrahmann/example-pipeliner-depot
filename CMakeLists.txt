@@ -4,3 +4,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 project(hello VERSION 1.0)
 add_executable(hello main.cpp)
+
+add_test(NAME unit-test COMMAND hello)
